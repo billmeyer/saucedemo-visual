@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
-import {BrowserRouter} from "react-router-dom";
 import {Dashboard} from './components/Dashboard';
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -16,9 +15,7 @@ class App extends Component {
     render() {
         return (
             <div className="layout-main">
-                <BrowserRouter>
-                    <Route path="/" exact component={Dashboard}/>
-                </BrowserRouter>
+                <Route path="/" exact component={Dashboard}/>
             </div>
         )
     }

@@ -306,7 +306,7 @@ export class Dashboard extends Component {
                 <div className="p-col-12 p-lg-6">
                     <div className="card">
                         <h1 style={{fontSize:'16px'}}>Recent Sales</h1>
-                        <DataTable value={this.state.cars}  style={{marginBottom: '20px'}} responsive={true}
+                        <DataTable value={this.state.cars}  style={{textAlign:'center', marginBottom: '20px'}} responsive={true}
                                 selectionMode="single" selection={this.state.selectedCar} onSelectionChange={(e) => this.setState({selectedCar: e.value})}>
                             <Column field="vin" header="Vin" sortable={true} />
                             <Column field="year" header="Year" sortable={true} />
