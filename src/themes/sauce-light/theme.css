@@ -2284,6 +2284,10 @@ body .p-paginator .p-dropdown {
     min-width: auto;
 }
 
+body .p-datatable {
+    text-align: center;
+}
+
 body .p-datatable .p-datatable-header,
 body .p-datatable .p-datatable-footer {
     background-color: #f4f4f4;

@@ -36,7 +36,18 @@ const state = {
     ]
 };
 
-storiesOf('Prime React SplitButton', module)
+storiesOf('SplitButton', module)
+    .add('All', () =>
+        <div>
+            <SplitButton label="Primary"/>
+            <SplitButton label="Secondary" className="p-button-secondary" model={state.items}/>
+            <SplitButton label="Success" className="p-button-success" model={state.items}/>
+            <SplitButton label="Info" className="p-button-info" model={state.items}/>
+            <SplitButton label="Warning" className="p-button-warning" model={state.items}/>
+            <SplitButton label="Danger" className="p-button-danger" model={state.items}/>
+            <SplitButton icon="pi pi-plus" label="Hello Prime React Button" model={state.items}/>
+        </div>
+    )
     .add('Primary', () => <SplitButton label="Primary"/>)
     .add('Secondary', () => <SplitButton label="Secondary" className="p-button-secondary" model={state.items}/>)
     .add('Success', () => <SplitButton label="Success" className="p-button-success" model={state.items}/>)

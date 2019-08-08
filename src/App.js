@@ -3,8 +3,9 @@ import {Route} from 'react-router-dom';
 import {Dashboard} from './components/Dashboard';
 
 // import 'primereact/resources/themes/nova-light/theme.css';
+// import 'primereact/resources/primereact.min.css';
+import './themes/primereact.css';
 import './themes/sauce-light/theme.css';
-import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import '@fullcalendar/core/main.css';
